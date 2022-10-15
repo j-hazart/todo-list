@@ -1,15 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&display=swap');
+
 .main {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   padding: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.main form {
+.main h1 {
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+}
+
+.task-form {
   display: flex;
   gap: 1rem;
 }
 
-.main h1 {
-  text-transform: uppercase;
+.task-form input {
+  font-family: 'Fuzzy Bubbles', cursive;
 }
