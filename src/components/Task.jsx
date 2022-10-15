@@ -1,7 +1,7 @@
 export default function Task({ taskInfo, onClick }) {
     return (
         <li className='list-element'>
-            {taskInfo.name} <button onClick={onClick}>X</button>
+            {taskInfo.name} <button onClick={onClick}></button>
         </li>
     )
 };
