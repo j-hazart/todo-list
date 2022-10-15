@@ -28,9 +28,9 @@ function App() {
   return (
     <div className='main'>
       <h1>To Do List</h1>
-      <TaskForm className='task-form' handleAdd={handleAdd} />
+      <TaskForm handleAdd={handleAdd} />
       <ul className='list'>
-        {tasks.map((task) => <Task className='list-element' key={task.id} taskInfo={task} onClick={() => handleDelete(task.id)} />)}
+        {tasks.map((task) => <Task key={task.id} taskInfo={task} onClick={() => handleDelete(task.id)} />)}
       </ul>
     </div >
   )
