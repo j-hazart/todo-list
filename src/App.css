@@ -3,7 +3,6 @@
 
 .main {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  padding: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -16,9 +15,26 @@
 
 .task-form {
   display: flex;
-  gap: 1rem;
 }
 
 .task-form input {
   font-family: 'Fuzzy Bubbles', cursive;
+  padding: 0.5rem;
+  border: none;
+  background-color: whitesmoke;
+}
+
+.task-form input:focus {
+  outline: none;
+}
+
+.task-form button {
+  border: none;
+  background-color: red;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.task-form button:hover {
+  background-color: #c00000;
 }

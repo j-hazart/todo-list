@@ -21,7 +21,7 @@ export default function TaskForm({ handleAdd }) {
     return (
         <form className='task-form' action="submit" onSubmit={handleSubmit}>
             <input type='text' placeholder='Ajoute une tâche...' value={newTask} onChange={handleChange}></input>
-            <button type="submit">Ajouter</button>
+            <button type="submit">+</button>
         </form>
     )
 };
