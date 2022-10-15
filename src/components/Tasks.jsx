@@ -1,11 +1,11 @@
 const Task = ({ task, index, state }) => {
-    //{(e) => e.target.parentNode.remove()}
     const [tasksList, setTasksList] = state;
-    const removeTasks = () => {
+    const firstLetterUpperCase = (taskToEdit) => {
+        return taskToEdit.charAt(0).toUpperCase() + taskToEdit.slice(1).toLowerCase()
     }
     return (
         <li key={index} className='task'>
-            <p onClick={(e) => e.target.classList.toggle('checked')}> {task} </p>
+            <p onClick={(e) => e.target.classList.toggle('checked')}> {firstLetterUpperCase(task)} </p>
             <span onClick={(e) => e.target.parentNode.remove()} > X </span>
         </li>
     )

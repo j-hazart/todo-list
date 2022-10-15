@@ -4,11 +4,7 @@ import Task from "./Tasks";
 
 const FormAndList = () => {
     const [userInput, setUserInput] = React.useState('');
-    const [tasksList, setTasksList] = React.useState([
-        "element 1",
-        "element 2",
-        "element 3",
-    ]);
+    const [tasksList, setTasksList] = React.useState([]);
 
     const handleTasksList = (event) => {
         event.preventDefault();
