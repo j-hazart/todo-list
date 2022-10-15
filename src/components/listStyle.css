@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&display=swap');
+
+input {
+    font-family: 'Fuzzy Bubbles', cursive;
+    font-size: 1rem;
+}
+
+button {
+    background-color: red;
+    color: white;
+    border: 0;
+    padding: 1rem;
+    ;
+}
+
+ul {
+    list-style: none;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    gap: 1rem;
+    font-family: 'Fuzzy Bubbles', cursive;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: whitesmoke;
+}
+
+li span {
+    background-color: red;
+    color: white;
+    padding: 1rem;
+}
+
+li span:hover,
+p:hover {
+    opacity: 0.5;
+}
+
+li p {
+    margin-left: 1rem;
+}
+
+.checked {
+    text-decoration: line-through;
+    opacity: 0.2;
+}
