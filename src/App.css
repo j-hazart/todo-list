@@ -40,6 +40,8 @@
 
 .task-form button:hover {
   background-color: #c00000;
+  transform: rotate(180deg);
+  transition: transform 1s;
 }
 
 .main ul {
