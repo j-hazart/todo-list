@@ -60,6 +60,10 @@
   padding: 0.5rem;
 }
 
+.list-element:hover {
+  background-color: #dddddd;
+}
+
 .list-element button {
   border: none;
   background-color: inherit;
