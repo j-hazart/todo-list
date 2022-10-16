@@ -1,13 +1,9 @@
-export default function Task({ taskInfo, onClick }) {
+export default function Task({ taskInfo, onClick, onCompleted }) {
 
-    const taskCheck = (event) => {
-        event.target.style.textDecoration === ''
-            ? event.target.style.textDecoration = 'line-through'
-            : event.target.style.textDecoration = '';
-    }
+
     return (
         <li className='list-element'>
-            <span onClick={taskCheck}>{taskInfo.name}</span><button onClick={onClick}></button>
-        </li>
+            <span onClick={onCompleted} style={taskInfo.completed ? { textDecoration: 'line-through' } : { textDecoration: 'initial' }}>{taskInfo.name}</span><button onClick={onClick}></button>
+        </li >
     )
 };

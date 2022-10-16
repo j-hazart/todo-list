@@ -12,7 +12,7 @@ export default function TaskForm({ handleAdd }) {
 
         const id = new Date().getTime();
         const name = newTask;
-        const taskToAdd = { id, name };
+        const taskToAdd = { id, name, completed: false };
         name === '' || handleAdd(taskToAdd);
 
         setNewTask('');
